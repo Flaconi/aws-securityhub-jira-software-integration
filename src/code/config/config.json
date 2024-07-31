@@ -1,9 +1,32 @@
 {
     "Controls" : {
-        "eu-west-1": [
-         "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0/rule/1.22"
+        "eu-central-1": [
+         "security-control/S3.5",
+         "security-control/EFS.6",
+         "security-control/EC2.15",
+         "security-control/ECS.1",
+         "security-control/EC2.25",
+         "security-control/AutoScaling.3",
+         "security-control/EC2.9",
+         "security-control/EC2.3",
+         "security-control/EC2.53",
+         "security-control/EC2.15",
+         "security-control/EC2.13",
+         "security-control/EC2.8",
+         "security-control/EC2.18",
+         "security-control/EC2.19",
+         "security-control/IAM.28",
+         "security-control/EKS.2",
+         "security-control/S3.8",
+         "security-control/Inspector.4",
+         "security-control/Inspector.1",
+         "security-control/APIGateway.4",
+         "security-control/APIGateway.1",
+         "security-control/S3.9",
+         "security-control/Config.1",
+         "security-control/KMS.4",
+         "security-control/KMS.3"
      ],
-        "default": [
-     ]
+        "default": []
     } 
  }
