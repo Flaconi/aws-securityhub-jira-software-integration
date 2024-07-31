@@ -202,11 +202,13 @@ def is_closed(jira_client, issue):
 
 
 def is_suppressed(jira_client, issue):
-    return issue.fields.status.name == "Risk approved" or issue.fields.status.name == "Accepted false positive"
+    #return issue.fields.status.name == "Risk approved" or issue.fields.status.name == "Accepted false positive"
+    return issue.fields.status.name == "Suppressed"
 
 
 def is_test_fix(jira_client, issue):
-    return issue.fields.status.name == "Test fix"
+    # return issue.fields.status.name == "Test fix"
+    return issue.fields.status.name == "Resolved"
 
 
 def reopen_jira_issue(jira_client, issue):

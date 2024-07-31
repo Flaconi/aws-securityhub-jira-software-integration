@@ -36,7 +36,8 @@ def finding_parser(finding):
 def create_jira(jira_client, project_key, issuetype_name, product_arn, account, region, description, resources, severity, title, id):
 
     resources = "Resources: %s" % resources if not "default" in product_arn else ""
-
+    if "CRITICAL" in severity:
+        severity = severity.replace("CRITICAL","Highest")
     new_issue = utils.create_ticket(
         jira_client, project_key, issuetype_name, account, region, description, resources, severity, title, id)
     utils.update_securityhub(
